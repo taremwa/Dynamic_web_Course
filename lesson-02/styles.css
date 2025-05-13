@@ -1,0 +1,23 @@
+h4{
+    color: brown;
+}
+
+body {
+    background-color: bisque;
+}
+
+table, th, td {
+    border: 3px, black, solid;
+    border-collapse: collapse;
+}
+p {
+    background-color: chartreuse;
+    color: aliceblue;
+    font-size: 25px;
+    margin: 20px;
+    border: 5px red solid;
+    padding: 40px;
+    text-decoration: line-through;
+    text-decoration-color: brown;
+}
+

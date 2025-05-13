@@ -8,7 +8,7 @@
 <body>
     <h2>Welcome to the Contact page</h2>
     <p><a href="./index.html">Back to Home</a></p>
-    <img src ="../code.jpeg" alt="second image" width="400" height="200">
+    <img src ="./code.jpeg" alt="second image" width="400" height="200">
     <h4>Course covered</h4>
     <ol>
         <li>Cyber security</li>
@@ -16,29 +16,35 @@
         <li>Data science</li>
     </ol>
 
-    <form action="#">
-        <div>
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="fname">
-        </div>
-        <div>
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lname">
-        </div>
-        <div>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
-        </div>
-        <div>
-            <label for="html">Html</label>
-            <input type="radio" id="html" name="program" value="java">
-
-            <label for="css">Css</label>
-            <input type="radio" id="css" name="program" value="java">
-
-            <label for="java">Javascript</label>
-            <input type="radio" name="program" id="java" value="java">
-        </div>
+    <form action="post">
+        <fieldset>
+            <legend>Please fill in your information</legend>
+            <div>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" required>
+            </div><br>
+            <div>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" required>
+            </div><br>
+            <div>
+                <label for="email">Email ID</label>
+                <input type="email" name="email" id="email" required>
+            </div><br>
+            <div>
+                <label for="fpassword">Password</label>
+                <input type="password" name="fpassword" id="fpassword" value="">
+            </div><br>
+            <div>
+                <p>Sex</p>
+                <label for="male">male</label>
+                <input type="radio" name="gender" id="male">
+                <label for="female">female</label>
+                <input type="radio" name="gender" id="female">
+            </div>
+        </fieldset>
+        <input type="submit">
+        <input type="reset">
     </form>
 </body>
 </html>
